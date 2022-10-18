@@ -10,7 +10,7 @@ if(isset($_POST["submit"])){
 require_once "config.php";
 require_once "functions.php";
 
-if(emptyFields($name,$username,$email,$pass,$passConfirm) !== false){
+if(emptyFieldsSignup($name,$username,$email,$pass,$passConfirm) !== false){
     header("location: ../signup.php?error=emptyFields");
     exit();
 }

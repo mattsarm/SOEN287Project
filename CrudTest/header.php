@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,3 +11,16 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
+<body>
+<?php
+if(isset($_SESSION["userUid"])){
+    echo "<a href='signup.php'>Sign Up Again</a>";
+    echo "<a href='logout.php'>Log Out</a>";
+} else {
+    echo "<a href='signup.php'>Sign Up</a>";
+    echo "<a href='login.php'>Log In</a>";
+}
+?>
+
+
