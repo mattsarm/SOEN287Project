@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome Page</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome-Page</title>
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="css/index.css" />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"/> -->
   </head>
 
-
   <body>
-    <header id="showcase">
-        <h1 class="welcome-title" id="GradeView">
-        Welcome to xyz <br> University GradeView
-        </h1>
-        <h2 class="welcome-title" id="gradeManagement">
-        grade management program
-        </h2>
-        <a href="#" class="button">Press here to continue</a>
+    <div class="bg-image"></div>
+    <header id="welcome-page" style="text-align: center;">
+      <div class="bg-text" style="text-align: left";>
+        <h1 id="GradeView">Welcome to xyz <br> University GradeView</h1>
+        <h2 id="gradeManagement">grade management program</h2>
+      </div>
+      <a href="#" class="button" id="buttonContinue">Press here to continue</a>  
     </header>
+
+
+    <script>
+      var buttonContinue = document.getElementById("buttonContinue");
+      if (buttonContinue) {
+        buttonContinue.addEventListener("click", function (e) {
+          // Send to page 02 (login) of project
+        });
+      }
+    </script>
+
   </body>
 </html>

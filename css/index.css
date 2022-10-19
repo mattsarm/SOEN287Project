@@ -17,7 +17,7 @@ body {
     color:#395a92;
   }
 
-  #showcase{
+  #welcome-page{
     position: relative;
     height: 100vh;
     width: 100%;
@@ -26,41 +26,32 @@ body {
     align-items: center;
     justify-content: center;
     padding:0 20px;
-    text-align: left;
   }
 
-  #showcase::before{
-    content: "";
-    background-image: url('../img/showcase.jpg');
-    background-size: cover;
-    position: absolute;
-    /*background-position: center;*/
-    /* height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:0 20px; */
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
-    opacity: 0.25;
+  .bg-image{
+      content: "";
+      background-image: url('../img/showcase.jpg');
+      background-size: cover;
+      position: absolute;
+      top:0px;
+      right:0px;
+      bottom:0px;
+      left:0px;
+      opacity: 0.25;
   }
 
-  #showcase h1{
+  #welcome-page h1{
     font-size:50px;
     text-align:left;
     line-height: 1.2;
   }
 
-  #showcase h2{
+  #welcome-page h2{
     font-size:30px;
     text-align:left;
-  
   }
 
-  #showcase .button{
+  #welcome-page .button{
     font-size:18px;
     text-decoration: none;
     color:#395a92;
