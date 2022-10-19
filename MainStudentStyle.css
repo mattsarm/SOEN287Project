@@ -5,12 +5,13 @@ html{
     vertical-align: center;
 }
 
-th, tr, td, caption{
+th, tr, td{
     border: 1px solid;
     text-align: center;
     vertical-align: center;
     /*border-collapse: collapse;*/
-    background-color: white
+    background-color: white;
+    border-radius: 8px;
 }
 
 th{
@@ -24,4 +25,5 @@ table{
 header{
     width: 100%;
     background-color: white;
+    border-radius: 10px;
 }
