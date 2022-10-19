@@ -17,7 +17,18 @@
         <h1 id="GradeView">Welcome to xyz <br> University GradeView</h1>
         <h2 id="gradeManagement">grade management program</h2>
       </div>
-      <a href="#" class="button">Press here to continue</a>  
+      <a href="#" class="button" id="buttonContinue">Press here to continue</a>  
     </header>
+
+
+    <script>
+      var buttonContinue = document.getElementById("buttonContinue");
+      if (buttonContinue) {
+        buttonContinue.addEventListener("click", function (e) {
+          // Send to page 02 (login) of project
+        });
+      }
+    </script>
+
   </body>
 </html>
