@@ -1,19 +1,24 @@
-table, th, tr{
+th, tr, td, caption{
     border: 1px solid;
     text-align: center;
     vertical-align: center;
-    border-collapse: collapse;
-    background-color: white;
-
+    /*border-collapse: collapse;*/
+    background-color: white
 }
 
-caption{
-    background-color: white;
+th{
+    background-color: #C0C0C0;
 }
 
 table{
     width: 100%;
 }
+
+.assesmentView, .dashboard{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
 
 header{
     width: 100%;
