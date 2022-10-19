@@ -5,23 +5,25 @@ html{
     vertical-align: center;
 }
 
-th, tr, td, caption{
+header{
+    background-color: aliceblue;
+    width: 15%;
+
+}
+
+th, td{
     border: 1px solid;
     text-align: center;
     vertical-align: center;
     /*border-collapse: collapse;*/
-    background-color: white
 }
 
 th{
+    width: 30%;
     background-color: #C0C0C0;
 }
 
-table{
-    width: 100%;
-}
-
-header{
-    width: 100%;
+td{
+    width: 30%;
     background-color: white;
 }
