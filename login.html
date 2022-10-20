@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = “en”>
+    <head>
+    <meta charset="utf-8"/>
+    <title> Login Page  </title>
+    <link rel ="stylesheet" href ="login.css">
+ </head> 
+
+    <body>
+        <form class = "center" action ="MainStudent.html" method = "GET">
+            <h1> User Login</h1>
+            <div class = "insideText">
+                <input type = "text"  required placeholder = "Username">
+            </div>
+            <div class = "insideText">
+                <input type = "password" required placeholder = "Password">
+            </div> 
+           <button> Login </button>
+            <div class = "status">
+             <input type = "radio" required name = "status" value = "student">
+             <label for = "student"> Student </label>
+             <input type = "radio" required name = "status" value = "teacher">
+             <label for = "teacher"> Teacher </label>
+            </div>
+        </form>
+</body>
+    </html>
