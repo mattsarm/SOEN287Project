@@ -3,11 +3,12 @@
     <head>
     <meta charset="utf-8"/>
     <title> Login Page  </title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel ="stylesheet" href ="customCSS/login.css">
  </head> 
 
     <body>
-        <form class = "center" action ="MainStudent.html" method = "GET">
+        <!-- <form class = "center" action ="MainStudent.html" method = "GET">
             <h1> User Login</h1>
             <div class = "insideText">
                 <input type = "text"  required placeholder = "Username">
@@ -22,6 +23,61 @@
              <input type = "radio" required name = "status" value = "teacher">
              <label for = "teacher"> Teacher </label>
             </div>
-        </form>
+        </form> -->
+
+          <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                  <div class="card bg-light text-dark" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+          
+                      <div class="mb-md-5 mt-md-4 pb-5">
+                        <form class = "center" action ="MainStudent.html" method = "GET">
+                        <h2 class="fw-bold mb-2 text-uppercase">User Login</h2>
+                        <p class="text-dark-50 mb-5">Please enter your login and password</p>
+          
+                        <div class="form-outline form-white mb-4">
+                          <input type="email" id="typeEmailX" class="form-control form-control-lg" required placeholder = "Username" />
+                          <br>
+                        </div>
+          
+                        <div class="form-outline form-white mb-4">
+                          <input type="password" id="typePasswordX" class="form-control form-control-lg" required placeholder = "Password" />
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Student</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Teacher</label>
+                          </div>
+
+                        <p><br></p>
+          
+                        <a class="btn btn-dark btn-lg px-5" href="#link" role="button" type="submit">
+                            Login
+                        </a>
+                      </div>
+                    </form>
+          
+                      <div>
+                        <p class="mb-0">Don't have an account? <a href="#!" class="text-dark-50 fw-bold">Sign Up</a>
+                        </p>
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
     </html>
