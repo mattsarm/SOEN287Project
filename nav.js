@@ -12,7 +12,7 @@ if(currentPage == "/MainStudent.html"){
     oldelem.parentNode.replaceChild(newelem,oldelem);
 })
 }
-else if(currentPage == "/MainTeacher.html"){
+else if(currentPage == "/MainTeacher.html" || currentPage == "/TeacherGrade.html"){
     fetch('NavTeacher.html')
     .then(res => res.text())
     .then(text => {
@@ -22,8 +22,3 @@ else if(currentPage == "/MainTeacher.html"){
         oldelem.parentNode.replaceChild(newelem,oldelem);
     })
 }
-
-
-
-
-

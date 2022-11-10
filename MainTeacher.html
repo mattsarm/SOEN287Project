@@ -23,12 +23,114 @@
 
     <header id = "">
         <h1 class = "dashboard" id = "dashboardTitle">
-        Teacher Portal 
+            Assessments Section
         </h1>
-        <h2> Assessments Section </h2>
+        <p></p>
     </header>
 
-    <div class="assessmentsSection">
+    <div class="container p-5">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                <div class="col-md-4 ms-auto"><h3>Current Assessments</h3></div>
+                    <div class="col-md text-right">
+                    <button type="button" class="btn btn-outline-dark add-new"> Add New</button>
+                    </div>
+                </div>
+            </div>
+            
+    <table class="table align-middle mb-5 bg-white table-bordered">
+        <thead class="bg-light">
+            <tr>
+                <th>Assessment Name</th>
+                <th>Weight</th>
+                <th># of questions</th>
+                <th>See totals</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>                 
+                <div class="ms-3">
+                  <p class="fw-bold mb-1">Quiz 1</p>
+                  <p class="text-muted mb-0">Submitted 08/10/2022</p>
+                </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">5%</p>
+            </td>
+            <td>
+                <p class="fw-normal mb-1">4</p>
+            </td>
+
+            <td>
+                <button type="button" class="btn btn-outline-dark add-new"> See Totals</button>
+            </td>
+
+            <td>
+                <button type="button" class="btn btn-outline-warning">Edit</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+
+            <tr>
+                <td>                 
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Quiz 2</p>
+                      <p class="text-muted mb-0">Submitted 22/10/2022</p>
+                    </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">5%</p>
+                </td>
+                <td>
+                    <p class="fw-normal mb-1">6</p>
+                </td>
+    
+                <td>
+                    <button type="button" class="btn btn-outline-dark add-new"> See Totals</button>
+                </td>
+    
+                <td>
+                    <button type="button" class="btn btn-outline-warning">Edit</button>
+                    <button type="button" class="btn btn-outline-danger">Delete</button>
+                </td>
+            </tr>
+                <tr>
+                    <td>                 
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">Quiz 3</p>
+                          <p class="text-muted mb-0">Submitted 05/11/2022</p>
+                        </div>
+                    </td>
+                    <td>
+                      <p class="fw-normal mb-1">8%</p>
+                    </td>
+                    <td>
+                        <p class="fw-normal mb-1">10</p>
+                    </td>
+        
+                    <td>
+                        <button type="button" class="btn btn-outline-dark add-new"> See Totals</button>
+                    </td>
+        
+                    <td>
+                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+
+    <!-- <div class="assessmentsSection">
         <table class="assessmentsTable">
             <tr>
                 <th scope = "col" class="assTableTopRow"> Assessment Name </th>
@@ -134,8 +236,9 @@
             </tr>
         </table>
         <br>
-        <br>
-    <h2 id = "studentsSec"> Students Section </h2>
+        <br> -->
+    <div>
+        <h2 id = "studentsSec"> Students Section </h2>
     <br>
         <div class = "studentSection">
             <button id = "assignGrades"> Assign Grades </button>
