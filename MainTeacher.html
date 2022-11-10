@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset = "utf-8" />
     <meta name = "viewport" content = "initial-scale = 1, width=device-width" /> 
     <title> Main Page Teacher View </title>
-    <link rel = "stylesheet" href = "MainTeacher.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel = "stylesheet" href = "customCSS/MainTeacher.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" 
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" 
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>   
   </head>
 
   
   <body>
+    <header>
+        <script id="replace_with_navbar" src="nav.js"></script>
+        <p><br><br></p>
+    </header>
+
     <header id = "">
         <h1 class = "dashboard" id = "dashboardTitle">
         Teacher Portal 
@@ -21,14 +32,18 @@
         <table class="assessmentsTable">
             <tr>
                 <th scope = "col" class="assTableTopRow"> Assessment Name </th>
-                <th scope = "col" class="assTableTopRow"> Input Marks </th>
-                <th class = "assTableTopRow"> View Statistics </th>
-                <th class = "assTableTopRow"> Total Grades </th>
+                <th scope = "col" class="assTableTopRow"> Weight </th>
+                <th class = "assTableTopRow"> Number of questions </th>
+                <th class = "assTableTopRow"> Marks / question </th>
+                <th class = "assTableTopRow"> See Totals </th>
             </tr>
     
             <tr>
-                <td class = "assessmentType">COMP 335 Quiz 1 </td>
+                <td class = "assessmentType">Deliverable 1 </td>
                 <td class = "input marks"> <a href = "" class = "assessMarks" id = "inputMarksRow0"> <button> Input </button> </a> </td>
+                <td>
+                    
+                </td>
                 <td>
                     <a href = "" class = "assessView" id = "viewMarksRow0"> <button> View </button> </a>
                 </td>
@@ -42,10 +57,13 @@
                 <td class = "input marks"> <a href = "" class = "assessMarks" id = "inputMarksRow1"> <button> Input </button> </a> </td>
     
                 <td>
-                    <a href = "" class = "assessView" id = "viewMarksRow1"> <button> View </button> </a>
+                    
                 </td>
                 <td>
-                    <a href = "" class = "totalGrades" id = "totalGradesRow1"> <button> See Totals </button> </a>
+                    <a href = "" class = "assessView" id = "viewMarksRow0"> <button> View </button> </a>
+                </td>
+                <td>
+                    <a href = "" class = "totalGrades" id = "totalGradesRow0"> <button> See Totals </button> </a>
                 </td>
             </tr>
     
@@ -54,10 +72,13 @@
                 <td class = "input marks"> <a href = "" class = "assessMarks" id = "inputMarksRow2"> <button> Input </button> </a> </td>
                 
                 <td>
-                    <a href = "" class = "assessView" id = "viewMarksRow2"> <button> View </button> </a>
+                    
                 </td>
                 <td>
-                    <a href = "" class = "totalGrades" id = "totalGradesRow2"> <button> See Totals </button> </a>
+                    <a href = "" class = "assessView" id = "viewMarksRow0"> <button> View </button> </a>
+                </td>
+                <td>
+                    <a href = "" class = "totalGrades" id = "totalGradesRow0"> <button> See Totals </button> </a>
                 </td>
             </tr>
     
@@ -66,10 +87,13 @@
                 <td class = "input marks"> <a href = "" class = "assessMarks" id = "inputMarksRow3"> <button> Input </button> </a> </td>
                
                 <td>
-                    <a href = "" class = "assessView" id = "viewMarksRow3"> <button> View </button> </a>
+                    
                 </td>
                 <td>
-                    <a href = "" class = "totalGrades" id = "totalGradesRow3"> <button> See Totals </button> </a>
+                    <a href = "" class = "assessView" id = "viewMarksRow0"> <button> View </button> </a>
+                </td>
+                <td>
+                    <a href = "" class = "totalGrades" id = "totalGradesRow0"> <button> See Totals </button> </a>
                 </td>
             </tr>
 
@@ -78,10 +102,13 @@
                 <td class = "input marks"> <a href = "" class = "assessMarks" id = "inputMarksRow4"> <button> Input </button> </a> </td>
                
                 <td>
-                    <a href = "" class = "assessView" id = "viewMarksRow4"> <button> View </button> </a>
+                    
                 </td>
                 <td>
-                    <a href = "" class = "totalGrades" id = "totalGradesRow4"> <button> See Totals </button> </a>
+                    <a href = "" class = "assessView" id = "viewMarksRow0"> <button> View </button> </a>
+                </td>
+                <td>
+                    <a href = "" class = "totalGrades" id = "totalGradesRow0"> <button> See Totals </button> </a>
                 </td>
             </tr>
 
@@ -90,10 +117,13 @@
                 <td class = "input marks"> <a href = "" class = "assessMarks" id = "inputMarksRow5"> <button> Input </button> </a> </td>
                
                 <td>
-                    <a href = "" class = "assessView" id = "viewMarksRow5"> <button> View </button> </a>
+                    
                 </td>
                 <td>
-                    <a href = "" class = "totalGrades" id = "totalGradesRow5"> <button> See Totals </button> </a>
+                    <a href = "" class = "assessView" id = "viewMarksRow0"> <button> View </button> </a>
+                </td>
+                <td>
+                    <a href = "" class = "totalGrades" id = "totalGradesRow0"> <button> See Totals </button> </a>
                 </td>
             </tr>
 
@@ -101,7 +131,6 @@
                 <td colspan = "5" id = "buttonSpan"> 
                     <a href = ""> <button id = "addButton"> Add New Assessment </button> </a>
                 </td>
-
             </tr>
         </table>
         <br>
@@ -111,7 +140,13 @@
         <div class = "studentSection">
             <button id = "assignGrades"> Assign Grades </button>
             <button id = "viewGrades"> view Grades </button>
-                </div>
+        </div>
     </div>
+
+    <footer class="bg-dark text-center text-white">
+        <div class="text-center p-2 fixed-bottom" style="background-color: rgba(3, 23, 68, 0.932);">
+            <p></p>
+        </div>
+      </footer>
   </body>
 </html>
