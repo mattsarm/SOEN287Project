@@ -6,9 +6,11 @@
     background: -webkit-linear-gradient(to top, rgba(3, 22, 68, 1), rgb(8, 44, 128));
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to top, rgba(3, 22, 68, 1), rgba(8, 44, 128))
-    }
+    background: linear-gradient(to top, rgba(3, 22, 68, 1), rgba(8, 44, 128));
 
+    background-size: cover;
+    overflow-y: auto;
+}
 
 /* body{
     margin: 0;
