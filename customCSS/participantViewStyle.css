@@ -1,5 +1,5 @@
 html{
-    background: linear-gradient(to top, rgba(3, 22, 68, 1), rgba(8, 44, 128));
+    background-color: #25355F;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     vertical-align: center;
@@ -7,7 +7,6 @@ html{
 
 header{
     background-color: aliceblue;
-    width: 30%;
     border-radius: 10px;
 
 }
@@ -21,12 +20,10 @@ th, td{
 }
 
 th{
-    width: 30%;
     background-color: #C0C0C0;
 }
 
 td{
-    width: 30%;
     background-color: white;
 }
 
