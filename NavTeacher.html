@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light" id="myNavBar">
         <div class="container-fluid">
-        <div class="navbar-brand" href="#">STUDENT DASHBOARD</div>
+        <div class="navbar-brand" href="#">TEACHER DASHBOARD</div>
         <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,9 +28,25 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Assessments</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Participants</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Students
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Input Marks</a>
+                  <a class="dropdown-item" href="#">Assign Grades</a>
+                </div>
               </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Statistics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Assessment 1</a>
+                <a class="dropdown-item" href="#">Assessment 2</a>
+                <a class="dropdown-item" href="#">Assessment 3</a>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">

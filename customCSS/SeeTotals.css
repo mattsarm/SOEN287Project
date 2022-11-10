@@ -1,0 +1,48 @@
+html{
+    background-color:  #25355F;
+}
+
+.gradesBox{
+    text-align: center;
+    align-items: center;
+    background-color:  #C0C0C0;
+    margin-right: 300px;
+    margin-left: 300px;
+    border-radius: 20px;
+    border-width: 300px;
+    border-bottom: 1px solid black;
+ 
+
+}
+
+#gradesTable{
+    text-align: center;
+    align-items: center;
+    background-color:   white;
+    margin-left: 80px;
+    width: 85%;
+    height: 175px;
+ 
+}
+
+
+#header{
+    text-align: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color:    white;
+    padding: 7px;
+    border-radius: 80px;
+    border-bottom: 1px solid black;
+}
+
+th,tr,td,table{
+    background-color:  white;
+    border-collapse: collapse;
+    border-style: outset;
+    margin:50px;
+    padding: 4px;
+  
+    
+}
+
