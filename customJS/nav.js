@@ -12,7 +12,8 @@ if(currentPage == "/MainStudent.html" || currentPage == "/participantView.html")
     oldelem.parentNode.replaceChild(newelem,oldelem);
 })
 }
-else if(currentPage == "/MainTeacher.html" || currentPage == "/TeacherGrade.html"){
+else if(currentPage == "/MainTeacher.html" || currentPage == "/TeacherGrade.html" 
+        || currentPage == "/TeacherGrade2.html" || currentPage == "/TeacherGrade3.html"){
     fetch('NavTeacher.html')
     .then(res => res.text())
     .then(text => {
