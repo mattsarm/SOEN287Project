@@ -8,42 +8,24 @@
  </head> 
 
     <body>
-        <!-- <form class = "center" action ="MainStudent.html" method = "GET">
-            <h1> User Login</h1>
-            <div class = "insideText">
-                <input type = "text"  required placeholder = "Username">
-            </div>
-            <div class = "insideText">
-                <input type = "password" required placeholder = "Password">
-            </div> 
-           <button> Login </button>
-            <div class = "status">
-             <input type = "radio" required name = "status" value = "student">
-             <label for = "student"> Student </label>
-             <input type = "radio" required name = "status" value = "teacher">
-             <label for = "teacher"> Teacher </label>
-            </div>
-        </form> -->
-
           <section class="vh-100 gradient-custom">
             <div class="container py-5 h-100">
               <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                   <div class="card bg-light text-dark" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
-          
                       <div class="mb-md-5 mt-md-4 pb-5">
                         <form class = "center" action ="MainStudent.html" method = "GET">
                         <h2 class="fw-bold mb-2 text-uppercase">User Login</h2>
                         <p class="text-dark-50 mb-5">Please enter your login and password</p>
           
                         <div class="form-outline form-white mb-4">
-                          <input type="text" id="typeEmailX" class="form-control form-control-lg" required placeholder = "Username" />
+                          <input type="text" id="typeEmailX" class="form-control form-control-lg" required placeholder = "Username" name="uid"/>
                           <br>
                         </div>
           
                         <div class="form-outline form-white mb-4">
-                          <input type="password" id="typePasswordX" class="form-control form-control-lg" required placeholder = "Password" />
+                          <input type="password" id="typePasswordX" class="form-control form-control-lg" required placeholder = "Password" name="password"/>
                         </div>
 
                         <div class="form-check form-check-inline">
@@ -59,9 +41,9 @@
 
                         <p><br></p>
           
-                        <a class="btn btn-dark btn-lg px-5" href="#link" role="button" type="submit">
+                        <button class="btn btn-dark btn-lg px-5" href="#link" role="button" type="submit">
                             Login
-                        </a>
+                        </button>
                       </div>
                     </form>
           
