@@ -1,5 +1,57 @@
 <?php
 
+function displayAssessments($conn){
+$sql = "SELECT * FROM assessments";
+$result = mysqli_query($conn,$sql);
+if($result){
+    while($row = mysqli_fetch_assoc($result)){
+        $id = $row['assessmentId'];
+        $name = $row['assessmentName'];
+        $questions = $row['numberOfQuestions'];
+        $weight = $row['weight'];
+        echo '<tr>
+        <th>'.$id.'</th>
+        <td>'.$name.'</td>
+        <td>'.$questions.'</td>
+        <td>'.$weight.'</td>
+        <td>
+        <button >
+        <a href="update.php?updateid='.$id.'">Update</a>
+        </button>
+        <button >
+        <a href="./includes/delete.php?deleteid='.$id.'">Delete</a>
+        </button>
+        <button >
+        <a href="./includes/view.php?viewid='.$id.'">View</a>
+        </button>
+        </td>
+        </tr>';
+    }
+}
+}
+
+function createAssessment($conn,$name,$ques,$weight){
+    $sql = "INSERT INTO assessments(assessmentName,numberOfQuestions,weight) VALUES('$name',$ques,$weight)";
+    $result = mysqli_query($conn,$sql);
+    if($result){
+        header("location: ../assessments.php?error=none");
+        exit();
+    } else {
+        header("location: ../assessments.php?error=stmtfailed");
+        exit();
+    }
+}
+
+function emptyFieldsAssessment($name,$ques,$weight){
+$result;
+if(empty($name) || empty($ques) ||empty($weight)){
+    $result = true;
+} else {
+    $result = false;
+}
+return $result;
+}
+
 function passDoesNotMatch($pass,$passConfirm){
     $result = false;
     if($pass !== $passConfirm){
