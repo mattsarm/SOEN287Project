@@ -22,5 +22,6 @@ if(isset($_SESSION["userUid"])){
     echo "<a href='login.php'>Log In</a>";
 }
 ?>
+<a href="assessments.php">Assessments</a>
 
 
