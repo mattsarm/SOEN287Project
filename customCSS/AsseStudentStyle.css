@@ -1,9 +1,9 @@
 html{
-    background-color: #25355F;
+    /* background-color: #25355F; */
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     vertical-align: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 th, tr, td {
