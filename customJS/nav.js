@@ -13,7 +13,8 @@ if(currentPage == "/MainStudent.html" || currentPage == "/participantView.html")
 })
 }
 else if(currentPage == "/MainTeacher.html" || currentPage == "/TeacherGrade.html" 
-        || currentPage == "/TeacherGrade2.html" || currentPage == "/TeacherGrade3.html"){
+        || currentPage == "/TeacherGrade2.html" || currentPage == "/TeacherGrade3.html"
+        || currentPage == "/TeacherMidterm.html" || currentPage == "/TeacherFinal.html"){
     fetch('NavTeacher.html')
     .then(res => res.text())
     .then(text => {
