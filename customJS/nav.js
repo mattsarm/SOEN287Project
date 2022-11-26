@@ -2,7 +2,8 @@ let currentPage = window.location.pathname
 
 console.log(currentPage);
 
-if(currentPage == "/MainStudent.html" || currentPage == "/participantView.html" || currentPage == "/AsseStudent.html"){
+if(currentPage == "/MainStudent.html" || currentPage == "/participantView.html" ||
+    currentPage == "/AsseStudent.html"){
     fetch('NavStudent.html')
 .then(res => res.text())
 .then(text => {
@@ -12,7 +13,7 @@ if(currentPage == "/MainStudent.html" || currentPage == "/participantView.html" 
     oldelem.parentNode.replaceChild(newelem,oldelem);
 })
 }
-else if(currentPage == "/MainTeacher.html" || currentPage == "/TeacherGrade.html" 
+else if(currentPage == "/MainTeacher.html" || currentPage == "/TeacherGrade.html"
         || currentPage == "/TeacherGrade2.html" || currentPage == "/TeacherGrade3.html"
         || currentPage == "/TeacherMidterm.html" || currentPage == "/TeacherFinal.html"){
     fetch('NavTeacher.html')
