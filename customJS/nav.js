@@ -3,7 +3,7 @@ let currentPage = window.location.pathname
 console.log(currentPage);
 
 if(currentPage == "/MainStudent.html" || currentPage == "/participantView.html" ||
-    currentPage == "/AsseStudent.html"){
+    currentPage == "/AsseStudent.html" || currentPage == "/StatsView.html"){
     fetch('NavStudent.html')
 .then(res => res.text())
 .then(text => {
