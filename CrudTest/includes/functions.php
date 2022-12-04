@@ -22,7 +22,7 @@ if($result){
         <a href="./includes/delete.php?deleteid='.$id.'">Delete</a>
         </button>
         <button >
-        <a href="./includes/view.php?viewid='.$id.'">View</a>
+        <a href="./view.php?viewid='.$id.'">View</a>
         </button>
         </td>
         </tr>';
@@ -30,10 +30,55 @@ if($result){
 }
 }
 
+/*function displayMarks($conn,$assessId){
+    $sql = "SELECT * FROM marks WHERE assessmentId=$assessId";
+    $result = mysqli_query($conn,$sql);
+    if($result){
+        while($row = mysqli_fetch_assoc($result)){
+        $user = $row['usersId'];
+        $qNum = $row['questionNumber'];
+        $qWeight = $row['questionWeight'];
+        $qGrade = $row['questionGrade'];
+        echo '
+        <tr>
+        <th>'.$user.'</th>
+        <td>'.$qNum.'</td>
+        <td>'.$qWeight.'</td>
+        <td>'.$qGrade.'</td>
+        </tr>';
+
+        }
+    }
+}*/
+
+function createMarks($conn,$ques,$name){
+    $sql = "SELECT usersId FROM users";
+    $result1 = mysqli_query($conn,$sql);
+    $sql1 = "SELECT assessmentId FROM assessments WHERE assessmentName = '$name'";
+    $result2 = mysqli_query($conn,$sql1);
+
+    if($result2){
+        $assessmentIdrow = mysqli_fetch_assoc($result2);
+        $assessmentId = $assessmentIdrow['assessmentId'];
+    }
+
+    if($result1){
+        while($row = mysqli_fetch_assoc($result1)){
+            $userid = $row['usersId'];
+            for($i = 1; $i <= $ques; $i++){
+                $sql2 = "INSERT INTO marks(assessmentId,usersId,questionNumber,questionWeight,questionGrade) VALUES($assessmentId,$userid,$i,0,0)";
+                $result3 = mysqli_query($conn,$sql2);
+            }
+        }
+    }
+
+}
+
 function createAssessment($conn,$name,$ques,$weight){
     $sql = "INSERT INTO assessments(assessmentName,numberOfQuestions,weight) VALUES('$name',$ques,$weight)";
     $result = mysqli_query($conn,$sql);
     if($result){
+        createMarks($conn,$ques,$name);
         header("location: ../assessments.php?error=none");
         exit();
     } else {
