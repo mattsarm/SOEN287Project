@@ -3,7 +3,8 @@ let currentPage = window.location.pathname
 console.log(currentPage);
 
 if(currentPage.endsWith("MainStudent.html") || currentPage.endsWith("participantView.html") ||
-    currentPage.endsWith("AsseStudent.html") || currentPage.endsWith("StatsView.html")){
+    currentPage.endsWith("AsseStudent.html") || currentPage.endsWith("StatsView.html") ||
+    currentPage.endsWith("GradeBreakdownStudent.html")){
     fetch('NavStudent.html')
         .then(res => res.text())
         .then(text => {
