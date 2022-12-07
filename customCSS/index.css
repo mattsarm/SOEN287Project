@@ -5,17 +5,9 @@
 
 /*This doesn't work yet. Need to figure out how to use custom fonts*/
 @font-face {
-  font-family: Inter;
-  src: url(https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap);
+  font-family: 'Source Sans Pro';
+  src: url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@300;700&display=swap);
 }
-
-body {
-    margin: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font: size 17px;
-    line-height: 1.6;
-    color:rgb(8, 44, 128);
-  }
 
   #welcome-page{
     position: relative;
@@ -26,7 +18,18 @@ body {
     align-items: center;
     justify-content: center;
     padding:0px;
+    margin: 0;
+    font-size: 200px;
+    color:rgb(8, 44, 128);
   }
+
+  /* body #welcome-page{
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+    font-family: 'Inter';
+    font: size 25px;
+    color:rgb(8, 44, 128);
+  } */
 
   .bg-image{
       content: "";
@@ -41,22 +44,19 @@ body {
   }
 
   #welcome-page h1{
-    font-size:50px;
     text-align:left;
+    font-size:55px;
     line-height: 1.2;
+    font-family: 'Source Sans Pro';
   }
 
   #welcome-page h2{
-    font-size:30px;
+    font-size:40px !important;
     text-align:left;
+    font-family: 'Source Sans Pro';
   }
 
-  #welcome-page .button{
-    font-size:18px;
-    text-decoration: none;
-    color:#395a92;
-    border: #395a92 1px solid;
-    padding:10px 20px;
-    margin: 10px;
-    border-radius:15px;
-  }
+  /* #GradeView h1{
+    font-size: 200px;
+    font-weight: lighter;
+  } */
