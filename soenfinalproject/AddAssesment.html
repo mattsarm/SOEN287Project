@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Assessment</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" 
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" 
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="vh-100" id="background-color">
+        <div class="container py-5 vh-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-light text-dark" style="border-radius: 1rem;">
+                <div class="card-body px-5 py-1">
+                  <div class="mb-md-5 mt-md-4 pb-5">
+        <form action="./includes/assessment.inc.php" method="POST">
+            <h2 class="fw-bold mb-2 py-3 text-uppercase text-center">Adding assessment</h2>
+            <div class="mb-3 py-3">
+            <label for="AssessmentName" class="form-label">Assessment name:</label>
+            <input type="text" class="form-control" id="AssessmentName" name="name" placeholder="Assessment Name" aria-describedby="assesHelp">
+            <div id="assesHelp" class="form-text">Enter the assessment name you want to add</div>
+            </div>
+            <div class="mb-3 py-3">
+            <label for="numQuestions" class="form-label">Number of questions:</label>
+            <input type="number" class="form-control" id="numQuestions" name="questions" placeholder="Number of questions" aria-describedby="quesHelp">
+            <div id="quesHelp" class="form-text">Enter the number of questions of the assessment</div>
+            </div>
+            <div class="mb-3 py-3">
+            <label for="weight" class="form-label">Assessment Weight:</label>
+            <input type="number" class="form-control" id="weight" name="weight" placeholder="Weight" aria-describedby="weightHelp">
+            <div id="weightHelp" class="form-text">Enter the weight of the assessment in percents</div>
+            </div>
+            <div class="text-center">
+              <button type="submit" name="submit" class="btn btn-primary">Add Assessment</button>  
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

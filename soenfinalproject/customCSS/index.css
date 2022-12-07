@@ -1,0 +1,62 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+/*This doesn't work yet. Need to figure out how to use custom fonts*/
+@font-face {
+  font-family: Inter;
+  src: url(https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font: size 17px;
+    line-height: 1.6;
+    color:rgb(8, 44, 128);
+  }
+
+  #welcome-page{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0px;
+  }
+
+  .bg-image{
+      content: "";
+      background-image: url('../img/showcase.jpg');
+      background-size: cover;
+      position: absolute;
+      top:0px;
+      right:0px;
+      bottom:0px;
+      left:0px;
+      opacity: 0.25;
+  }
+
+  #welcome-page h1{
+    font-size:50px;
+    text-align:left;
+    line-height: 1.2;
+  }
+
+  #welcome-page h2{
+    font-size:30px;
+    text-align:left;
+  }
+
+  #welcome-page .button{
+    font-size:18px;
+    text-decoration: none;
+    color:#395a92;
+    border: #395a92 1px solid;
+    padding:10px 20px;
+    margin: 10px;
+    border-radius:15px;
+  }
