@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New user sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="customCSS/signUp.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <section class="vh-100" id="background-color">
+        <div class="container py-5 vh-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-light text-dark" style="border-radius: 1rem;">
+                <div class="card-body px-5 py-1">
+                  <div class="mb-md-5 mt-md-4 pb-5">
+        <form id="myForm" action="./includes/signup.inc.php" method="POST">
+            <h2 class="fw-bold mb-2 py-3 text-center">New user sign up</h2>
+
+            <div class="mb-3 py-1">
+                <label for="name" class="fw-bold form-label">Full name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Full given first name" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Enter your full given name</div>
+            </div>
+
+            <div class="mb-3 py-1">
+                <label for="email" class="fw-bold form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Enter the email where you want to receive school communications</div>
+            </div>
+
+            <div class="mb-3 py-1">
+                <label for="userID" class="fw-bold form-label">User ID:</label>
+                <input type="number" class="form-control" id="userID" name="uid" placeholder="ID" aria-describedby="idHelp">
+                <div id="idHelp" class="form-text">Enter the ID that was provided to you by the University</div>
+            </div>
+
+            <div class="mb-3 py-1">
+                <label for="password" class="fw-bold form-label">Password:</label>
+                <input type="password" class="form-control validate" id="password" name="pwd" placeholder="Password" aria-describedby="passHelp">
+                <div id="passHelp" class="form-text">Enter a strong password</div>
+            </div>
+
+            <div class="mb-3 py-1">
+                <label for="passwordConfirm" class="fw-bold form-label">Confirm password:</label>
+                <input type="password" class="form-control" id="passwordConfirm" name="pwdconfirm" 
+                        placeholder="Password" aria-describedby="passConfirm" required>
+                <small id="confirmPassword-feedback" class="form-text">Please confirm your password</small>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" name="submit" class="btn btn-primary">Sign up</button>  
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="customJS/signUp.js"></script>
+</body>
+</html>
