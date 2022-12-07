@@ -1,0 +1,10 @@
+.label {
+    display: inline-block;
+    width: 200px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  #confirmPassword-feedback {
+    color: red;
+  }
