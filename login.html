@@ -15,6 +15,7 @@
  </head> 
 
     <body>
+      <div class="schoolImage"></div>
           <section class="vh-100 gradient-custom" id="background-color">
             <div class="container py-5 vh-100">
               <div class="row d-flex justify-content-center align-items-center h-100">
