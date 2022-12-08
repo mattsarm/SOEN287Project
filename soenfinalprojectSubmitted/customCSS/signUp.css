@@ -1,0 +1,27 @@
+.label {
+  display: inline-block;
+  width: 200px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+#confirmPassword-feedback {
+  color: red;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: rgb(3, 22, 68);
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to top, rgba(3, 22, 68, 1), rgb(8, 44, 128));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to top, rgba(3, 22, 68, 1), rgba(8, 44, 128)); */
+  background: linear-gradient(to top, rgb(210, 216, 228), rgb(173, 198, 247));
+
+  background-size: cover;
+  overflow-y: auto;
+}
