@@ -36,6 +36,15 @@ html, body {
     margin-left: 50px;
 }
 
+/* .inner_footer .logo_container{
+    background-image: url('../img/logo3.png');
+    width: 10%;
+    float: left;
+    height: 20%;
+    display: flex;
+    margin-left: 50px;
+} */
+
 .inner_footer .logo_container img{
     padding-top: 10px;
     width: 200px;
