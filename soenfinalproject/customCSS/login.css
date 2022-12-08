@@ -1,106 +1,30 @@
 .gradient-custom {
     /* fallback for old browsers */
-    background: rgb(3, 22, 68);
+    background: rgb(125, 162, 243);
     
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to top, rgba(3, 22, 68, 1), rgb(8, 44, 128));
+    background: -webkit-linear-gradient(to top, rgb(167, 186, 237), rgb(125, 162, 243));
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to top, rgba(3, 22, 68, 1), rgba(8, 44, 128));
+    background: linear-gradient(to top, rgba(165, 184, 238, 0.849), rgba(58, 100, 192, 0.74));
+    /* background: linear-gradient(to top, rgb(167, 186, 237), rgb(125, 162, 243)); */
 
     background-size: cover;
     overflow-y: auto;
 }
 
-/* body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #25355F;
-} */
-
-/* .center{
-    text-align: center;
-    width: 400px;
-    height: 400x;
-    position: absolute;
-    margin: 25px auto;
-    top: 50%;
-    left: 50%;
-    padding: 20px;
-    transform: translate(-50%, -50%);
-    background: #D9D9D9; 
-    border-radius: 20px;
-    border: 3px solid #031543;
-  
-} */
-
-
-/* .center h1{
-    text-align: center;
-    margin: 25px auto;
-    background: #D9D9D9;
-    font-size: 20px;
-    color: #031543;
-    font-weight:700;
-    border-bottom: 3px solid #01081b;
-} */
-
-/* .center input[type = "text"]{
-    position: relative; 
-    text-align: center;
-    color: #031543;
-    margin: 25px auto;
-    outline: none; 
-    font-size: 16x;
-    width: 300px;
-    height: 35px;
-    color:#031543;
-    border-radius: 20px;
-    border: 3px solid #031543;
+.schoolImage{
+    background-image: url('../img/showcase.jpg');
+      background-size: cover;
+      position: absolute;
+      top:0px;
+      right:0px;
+      bottom:0px;
+      left:0px;
+      opacity: 0.2;
 }
 
-.center input[type = "password"]{
-    position: relative; 
-    text-align: center;
-    color: #031543;
-    margin: 25px auto;
-    outline: none; 
-    font-size: 16x;
-    width: 300px;
-    height: 35px;
-    color:#031543;
-    border-radius: 20px;
-    border: 3px solid #031543;
-   
-} */
-
-/* ::placeholder{
-    color:#031543;
-    font-weight: 600;
-} */
-
-
-/* button{
-    font-size: 16px;
-    text-align: center;
-    margin: 25px auto;
-    width: 100px;
-    height: 30px;
-    background: #031543;
-    color: #FFFFFF;
-    border-radius: 20px;
-    font-weight:600;
-    border: 3px solid #0c0000;
-    cursor: pointer;
-} */
-
-/* label {
-    color:#031543;
-    font-weight: 600;
+#pageLink{
+    background-color: rgb(88, 122, 181);
+    color: white;
 }
-
-.center input[type = "radio"]{
-    cursor:pointer; 
-} */
-

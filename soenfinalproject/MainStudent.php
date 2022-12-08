@@ -24,12 +24,17 @@
             <p><br><br></p>
         </header>
 
-        <header id = "">
-            <h1 class = "dashboard" id = "dashboardTitle">
-                Student View
-            </h1>
-            <p></p>
-        </header>
+        <header id = "dashboard-header">
+        <div class="card">
+            <div class="card-body">
+                <div class="align-items-center">
+                    <h1 class="dashboard" id = "dashboardTitle">
+                        Student Dashboard
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
 
         <div class="container p-5">
             <div class="table-wrapper">
@@ -94,10 +99,32 @@
             </div>
         </div>
 
-        <footer class="bg-dark text-center text-white">
-            <div class="text-center p-2 fixed-bottom" style="background-color: rgba(3, 23, 68, 0.932);">
-                <p></p>
+        <div class="text-center p-2 fixed-bottom" style="background-color: rgba(3, 23, 68, 0.932);">
+            <div class="inner_footer">
+                <div class="logo_container">
+                    <img src="../img/logo3.png">
+                </div>
+                <div class="footer_middle">
+                    <h4>
+                        <p>
+                            TECH UNIVERSITY<br/>
+                            GradeView Management System<br/>
+                            Copyright<br/>
+                        </p>
+                    </h4>
+                </div>
+                <div class="footer_right">
+                    <h4>
+                        <p class="text-uppercase">
+                            Daria Denejkina<br/>
+                            Matthew Armstrong<br/>
+                            Aadil Ezzeddine<br/>
+                            Afaf Alanzarouti<br/>
+                            Jose Sanchez<br/>
+                        </p>
+                    </h4>
+                </div>
             </div>
-        </footer>
+        </div>
     </body>
 </html>
