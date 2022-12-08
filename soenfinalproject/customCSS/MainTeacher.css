@@ -3,6 +3,36 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     vertical-align: center;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#dashboard-header .card{
+    border: 0;
+}
+
+.card{
+    background-color: #f0f0f0 !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    font-weight: 500 !important;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    color: #2c2c2c;
+    font-size: 200px;
+    line-height: 28px;
 }
 
 
@@ -15,7 +45,6 @@ th, tr, td{
     border-radius: 8px;
     padding:3px;
     margin:25px;
-   
 }
 
 th{
@@ -32,8 +61,12 @@ header{
     width: 100%;
     color: #000000;
     font-style: bold;
-    background-color: white;
     border-radius: 10px;
+}
+
+#dashboardTitle{
+    font-size: calc(1.5rem + .5vw);
+    font-weight: 450;
 }
 
 #addButton{
@@ -51,19 +84,6 @@ header{
      outline: none; 
      border: none;
     
-}
-
-h1{
-    margin-left: auto;
-    margin-right: auto;
-    width: 16em;
-    vertical-align: center;
-    /* width: 60%; */
-    color: #000000;
-    font-style: bold;
-    background-color: #e2e1e1;
-    border-radius: 20px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.164);
 }
 
 #assignGrades{
@@ -86,7 +106,6 @@ h2{
     border-left: 2px solid black;
     border-right: 2px solid black;
     background-color: white;
-    /* border-radius: 20px; */
 }
 
 #studentsSec{

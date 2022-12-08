@@ -3,7 +3,6 @@
   padding:0;
 }
 
-/*This doesn't work yet. Need to figure out how to use custom fonts*/
 @font-face {
   font-family: 'Source Sans Pro';
   src: url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@300;700&display=swap);
@@ -22,14 +21,6 @@
     font-size: 200px;
     color:rgb(8, 44, 128);
   }
-
-  /* body #welcome-page{
-    margin: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
-    font-family: 'Inter';
-    font: size 25px;
-    color:rgb(8, 44, 128);
-  } */
 
   .bg-image{
       content: "";
@@ -55,8 +46,3 @@
     text-align:left;
     font-family: 'Source Sans Pro';
   }
-
-  /* #GradeView h1{
-    font-size: 200px;
-    font-weight: lighter;
-  } */

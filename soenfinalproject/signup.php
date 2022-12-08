@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <section class="vh-100" id="background-color">
+    <section class="vh-100 gradient-custom" id="background-color">
         <div class="container py-5 vh-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -50,7 +50,7 @@
 
             <div class="mb-3 py-1">
                 <label for="passwordConfirm" class="fw-bold form-label">Confirm password:</label>
-                <input type="password" class="form-control" id="passwordConfirm" name="pwdconfirm" 
+                <input type="password" class="form-control" id="passwordConfirm" name="confirmPassword" 
                         placeholder="Password" aria-describedby="passConfirm" required>
                 <small id="confirmPassword-feedback" class="form-text">Please confirm your password</small>
             </div>

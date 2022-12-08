@@ -6,7 +6,8 @@
     background: -webkit-linear-gradient(to top, rgb(167, 186, 237), rgb(125, 162, 243));
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to top, rgb(167, 186, 237), rgb(125, 162, 243));
+    background: linear-gradient(to top, rgba(165, 184, 238, 0.849), rgba(58, 100, 192, 0.74));
+    /* background: linear-gradient(to top, rgb(167, 186, 237), rgb(125, 162, 243)); */
     
 
     background-size: cover;
@@ -27,7 +28,6 @@
 #pageLink{
     background-color: rgb(88, 122, 181);
     color: white;
-  
 }
 
 

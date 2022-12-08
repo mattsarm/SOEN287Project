@@ -5,6 +5,34 @@ html{
     vertical-align: center;
 }
 
+#dashboard-header .card{
+    border: 0;
+}
+
+.card{
+    background-color: #f0f0f0 !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    font-weight: 500 !important;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    color: #2c2c2c;
+    font-size: 200px;
+    line-height: 28px;
+}
+
 
 th, tr, td{
     border: 1px solid;
@@ -41,7 +69,6 @@ h1{
     margin-right: auto;
     width: 16em;
     vertical-align: center;
-    /* width: 60%; */
     color: #000000;
     font-style: bold;
     background-color: #e2e1e1;

@@ -8,6 +8,9 @@
     <link rel = "stylesheet" href = "customCSS/MainTeacher.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" 
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "customCSS/footer.css"/>
+      <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@300;700&display=swap&effect=outline"> 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" 
@@ -25,11 +28,16 @@
         <p><br><br></p>
     </header>
 
-    <header id = "">
-        <h1 class = "dashboard" id = "dashboardTitle">
-            Assessments Section
-        </h1>
-        <p></p>
+    <header id = "dashboard-header">
+        <div class="card">
+            <div class="card-body">
+                <div class="align-items-center">
+                    <h1 class="dashboard" id = "dashboardTitle">
+                        Assessments Section
+                    </h1>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div class="container p-5">
@@ -103,10 +111,32 @@
       </table>
     </div>
 </div>
-    <footer class="bg-dark text-center text-white">
-        <div class="text-center p-2 fixed-bottom" style="background-color: rgba(3, 23, 68, 0.932);">
-            <p></p>
+<div class="text-center p-2 fixed-bottom" style="background-color: rgba(3, 23, 68, 0.932);">
+            <div class="inner_footer">
+                <div class="logo_container">
+                    <img src="../img/logo3.png">
+                </div>
+                <div class="footer_middle">
+                    <h4>
+                        <p>
+                            TECH UNIVERSITY<br/>
+                            GradeView Management System<br/>
+                            Copyright<br/>
+                        </p>
+                    </h4>
+                </div>
+                <div class="footer_right">
+                    <h4>
+                        <p class="text-uppercase">
+                            Daria Denejkina<br/>
+                            Matthew Armstrong<br/>
+                            Aadil Ezzeddine<br/>
+                            Afaf Alanzarouti<br/>
+                            Jose Sanchez<br/>
+                        </p>
+                    </h4>
+                </div>
+            </div>
         </div>
-      </footer>
   </body>
 </html>
